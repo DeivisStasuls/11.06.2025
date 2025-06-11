@@ -21,7 +21,8 @@ class AuthController extends Controller
         \Log::debug($token->plainTextToken);
         
         return [
-            'user' => $user
+            'user' => $user,
+            'token' =>$token->plainTextToken
         ];
     }
 
